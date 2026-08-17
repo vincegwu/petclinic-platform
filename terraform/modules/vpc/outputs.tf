@@ -27,3 +27,8 @@ output "alb_sg_id" {
   description = "ALB security group ID"
   value       = aws_security_group.alb.id
 }
+
+output "internet_gateway_id" {
+  description = "Internet Gateway ID"
+  value       = aws_internet_gateway.main.id
+}
